@@ -9,7 +9,7 @@ const App = () => (
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="me-auto">
-          <Nav.Link as={Link} to="/Weather">Weather</Nav.Link>
+          <Nav.Link as={Link} to="/">Weather</Nav.Link>
           <Nav.Link as={Link} to="/Favorites">Favorites</Nav.Link>
         </Nav>
         <Outlet />

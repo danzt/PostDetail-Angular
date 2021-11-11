@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useReducer } from 'react';
+import { useState, useEffect } from 'react';
 
 import WeatherList from './../components/WeatherList.js'
 
@@ -16,7 +16,10 @@ const Weather = () => {
 
   return (
     <>
-      <WeatherList weathers={weathers} title="Weather City" />
+      <div className="container mb-5">
+        <h1 className="mb-5 mt-5 text-center"> My City </h1>
+        <WeatherList weathers={weathers} title="Weather City" />
+      </div>
     </>
   );
 };

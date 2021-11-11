@@ -5,15 +5,20 @@ import Weather from './pages/Weather';
 import Favorites from './pages/Favorites';
 
 import { Routes, Route } from 'react-router-dom';
+import NoPage from './components/NoPage';
 
 const App = () => (
   <div>
     <Headers />
       <Routes>
-        <Route path="/">
-          <Route path="/Weather" element={<Weather />} />
+        <Route>
+          <Route path="/" element={<Weather />} />
           <Route path="/Favorites" element={<Favorites />} />
-          <Route path="*" element={<div>404</div>} />
+          <Route path="*" element={
+            <div>
+              <NoPage/>
+              </div>
+          } />
         </Route>
       </Routes>
   </div>
